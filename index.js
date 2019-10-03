@@ -4,7 +4,7 @@ const login = require('./routes/login.js')
 const register = require('./routes/register.js')
 const client = require('./db/db.js')
 const logger = require('./logger/logger.js')
-const port = process.env.port || 3000;
+const port = 3000;
 
 client.connect().catch((err)=> {
    logger.error(err.message)
