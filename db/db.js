@@ -4,6 +4,6 @@ const client = new pg.Client({
   host: process.env.HOST,
   database: process.env.DATABASE,
   password: process.env.PASSWORD,
-  port: process.env.port
+  port: process.env.DBPORT
   });
   module.exports = client
