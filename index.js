@@ -4,7 +4,7 @@ const login = require('./routes/login.js')
 const register = require('./routes/register.js')
 const client = require('./db/db.js')
 const logger = require('./logger/logger.js')
-const port = 3000;
+const port = 80;
 
 client.connect().catch((err)=> {
    logger.error(err.message)
@@ -24,4 +24,4 @@ app.use(function(err,res){
    res.status(500).send("Internal Server Error")
 })
 
-app.listen(port);
+app.listen(80);
